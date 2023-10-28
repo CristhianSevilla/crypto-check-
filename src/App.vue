@@ -12,7 +12,10 @@ const monedas = ref([
 <template>
   <div class="contenedor">
     <h1 class="titulo">Crypto<span> Check</span></h1>
-    <p>Cotiza Criptomonedas al Instante</p>
+    <p>
+      Cotiza en tiempo real el precio de las
+      <span>20 Criptomonedas con más valor</span> o capitalización en el mercado
+    </p>
 
     <div class="contenido">
       <form class="formulario">
@@ -32,6 +35,13 @@ const monedas = ref([
 
 <style>
 p {
+  color: rgba(255, 255, 255, 0.537);
+  line-height: 140%;
+  padding-left: 2rem;
+}
+p span {
+  font-weight: 500;
+  display: block;
   color: white;
 }
 </style>
