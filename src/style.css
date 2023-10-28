@@ -34,7 +34,6 @@ body {
 .contenido {
   margin-top: 5rem;
   padding: 6rem 2rem;
-  background-color: var(--blanco);
   max-width: 40rem;
   border-radius: 1rem;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -51,7 +50,7 @@ body {
   font-weight: 900;
 }
 .formulario label {
-  color: var(--negro);
+  color: var(--primario);
 }
 .formulario select {
   background-color: #ecebeb;
