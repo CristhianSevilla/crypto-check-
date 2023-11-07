@@ -1,6 +1,6 @@
 :root {
   --blanco: #fff;
-  --primario: #61ecbc;
+  --primario: #4de8b2;
   --negro: #182339;
 }
 html {
@@ -23,7 +23,7 @@ body {
 }
 .titulo {
   font-size: 3.8rem;
-  margin-top: 8rem;
+  margin-top: 7rem;
   line-height: 0.8;
   color: var(--blanco);
 }
@@ -33,11 +33,9 @@ body {
   font-size: 4.4rem;
 }
 .contenido {
-  margin-top: 5rem;
+  margin-top: 2rem;
   padding: 2rem;
   max-width: 40rem;
-  border-radius: 1rem;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 .formulario,
 .campo {
@@ -70,6 +68,7 @@ body {
   cursor: pointer;
   transition: background-color 300ms ease;
   margin-top: 2rem;
+  border-radius: 0.5rem;
 }
 .formulario [type="submit"]:hover {
   background-color: #0cb387;
