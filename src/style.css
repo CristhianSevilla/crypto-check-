@@ -16,13 +16,13 @@ body {
   font-size: 2rem;
 }
 .contenedor {
-  max-width: 80rem;
+  max-width: 95rem;
   width: 95%;
   margin: 0 auto;
 }
 .titulo {
   font-size: 3.8rem;
-  margin-top: 5rem;
+  margin-top: 8rem;
   line-height: 0.8;
   color: var(--blanco);
 }
