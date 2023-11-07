@@ -1,5 +1,6 @@
 <script setup>
 import { ref, reactive, onMounted } from "vue";
+import Alerta from "./components/Alerta.vue";
 
 const monedas = ref([
   { codigo: "USD", texto: "Dolar de Estados Unidos" },
@@ -15,6 +16,8 @@ const cotizar = reactive({
   criptomoneda: "",
 });
 
+const error = ref("");
+
 //Consultar la API
 onMounted(() => {
   const url =
@@ -23,6 +26,17 @@ onMounted(() => {
     .then((respuesta) => respuesta.json())
     .then(({ Data }) => (criptomonedas.value = Data));
 });
+
+const cotizarCripto = () => {
+  // Validar Formulario
+  if (Object.values(cotizar).includes("")) {
+    error.value = "Todos los campos son obligatorios";
+    return;
+  }
+
+  error.value = "";
+  console.log("Cotizando...");
+};
 </script>
 
 <template>
@@ -34,7 +48,7 @@ onMounted(() => {
     </p>
 
     <div class="contenido">
-      <form class="formulario">
+      <form class="formulario" @submit.prevent="cotizarCripto">
         <div class="campo">
           <label for="moneda">Elige tu moneda</label>
           <select id="moneda" v-model="cotizar.moneda">
@@ -56,6 +70,8 @@ onMounted(() => {
             </option>
           </select>
         </div>
+
+        <Alerta v-if="error">{{ error }}</Alerta>
 
         <input type="submit" value="Cotizar" />
       </form>
