@@ -66,7 +66,12 @@ p {
 }
 p span {
   font-weight: 500;
-  display: block;
   color: white;
+}
+
+@media (min-width: 768px) {
+  p span {
+    display: block;
+  }
 }
 </style>
