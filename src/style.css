@@ -74,8 +74,17 @@ body {
   background-color: #0cb387;
 }
 
+.contenedor-resultado {
+  background-color: var(--negro);
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
 .contenedor-resultado h2 {
   text-align: center;
+  color: var(--primario);
+  text-transform: uppercase;
 }
 
 .resultado {
@@ -88,9 +97,11 @@ body {
   width: 100%;
 }
 .resultado p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.1rem;
   font-size: 1.6rem;
+  font-weight: 700;
 }
 .resultado span {
-  font-weight: 700;
+  font-weight: 500;
+  display: block;
 }
