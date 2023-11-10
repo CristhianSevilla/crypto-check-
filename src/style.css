@@ -17,6 +17,7 @@ body {
     rgba(0, 0, 0, 1) 0%,
     rgba(2, 16, 28, 1) 90%
   );
+  margin: 0;
 }
 .background {
   background-image: url(../img/bg.png);
@@ -31,6 +32,7 @@ body {
   max-width: 95rem;
   width: 95%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .titulo {
   font-size: 3.8rem;
