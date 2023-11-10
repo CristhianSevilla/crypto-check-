@@ -7,12 +7,12 @@
 <style>
 .alerta {
   text-align: center;
-  margin-bottom: 2rem;
   color: var(--blanco);
-  background-color: rgb(174, 0, 0);
+  background-color: rgba(131, 6, 6, 0.841);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.4rem;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
 }
 </style>

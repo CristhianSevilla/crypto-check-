@@ -1,21 +1,31 @@
 :root {
   --blanco: #fff;
+  --blanco-transparente: rgba(255, 255, 255, 0.537);
   --primario: #4de8b2;
-  --negro: #182339;
+  --negro: #141a2c;
 }
 html {
   font-size: 62.5%;
 }
 body {
-  background-image: url(../img/bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 100vh;
   font-family: "Outfit", sans-serif;
   font-size: 2rem;
-  background-color: var(--negro);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(2, 16, 28, 1) 90%
+  );
+}
+.background {
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
 }
 .contenedor {
   max-width: 95rem;
@@ -32,6 +42,22 @@ body {
   color: var(--primario);
   display: block;
   font-size: 4.4rem;
+}
+.descripcion {
+  color: var(--blanco-transparente);
+  line-height: 140%;
+  padding-left: 2rem;
+  max-width: 40rem;
+}
+.descripcion span {
+  font-weight: 500;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .descripcion span {
+    display: block;
+  }
 }
 .contenido {
   margin-top: 2rem;
@@ -69,7 +95,8 @@ body {
   cursor: pointer;
   transition: background-color 300ms ease;
   margin-top: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
 }
 .formulario [type="submit"]:hover {
   background-color: #0cb387;
@@ -101,8 +128,11 @@ body {
   margin: 0 0 1.1rem;
   font-size: 1.6rem;
   font-weight: 700;
+  color: var(--blanco-transparente);
+  line-height: 145%;
 }
 .resultado span {
   font-weight: 500;
   display: block;
+  color: var(--blanco);
 }
